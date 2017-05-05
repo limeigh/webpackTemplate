@@ -1,3 +1,13 @@
 var test=require('./calc.js')
+require('./calc.css')
+require('./calc.less')
+require('./calc.scss')
 
-alert(test.add(3,5))
+var btn=document.getElementById('btn')
+var val1=document.getElementById('val1')
+var val2=document.getElementById('val2')
+var val3=document.getElementById('val3')
+
+btn.onclick=function(){
+	val3.value = (val1.value-0) + (val2.value-0)
+}
