@@ -1,7 +1,13 @@
-$width:50px;
+$width:100px;
 
 input{
 	width:$width;
 	border:none;
 	outline:none
+}
+
+.bg{
+	width:$width;
+	height:$width;
+	background:url('./images/bg.jpg') no-repeat;
 }
