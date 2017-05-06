@@ -1,8 +1,9 @@
+var HtmlwebpackPlugin=require('html-webpack-plugin')
 module.exports={
-	entry:'./main.js',
+	entry:'./src/main.js',
 	output:{
 		// path:__dirname+'/dist',
-		filename:'./build.js'
+		filename:'builds.js'
 	},
 	module:{
 		loaders:[
@@ -16,8 +17,15 @@ module.exports={
 			},
 			{
 				test:/\.(png|jpg|ttf)$/,
-				loader:'url-loader?limit=30000'
+				loader:'url-loader?limit=20000'
 			}
 		]
-	}
+	},
+	plugins:[
+		new HtmlwebpackPlugin({
+			title:'index',
+			filename:'index.html',
+			template:'index1.html'
+		})
+	]
 }
