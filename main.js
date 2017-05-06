@@ -1,7 +1,7 @@
 var test=require('./calc.js')
 require('./calc.css')
 require('./calc.less')
-require('./calc.scss')
+require('./mui/css/icons-extra.css')
 
 var btn=document.getElementById('btn')
 var val1=document.getElementById('val1')

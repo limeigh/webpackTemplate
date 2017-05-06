@@ -6,9 +6,9 @@
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
+/******/ 		if(installedModules[moduleId])
 /******/ 			return installedModules[moduleId].exports;
-/******/ 		}
+/******/
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -104,7 +104,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(8);
+	fixUrls = __webpack_require__(6);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -480,7 +480,7 @@ module.exports={
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(9);
+var content = __webpack_require__(7);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -511,7 +511,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(10);
+var content = __webpack_require__(8);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -539,47 +539,9 @@ if(false) {
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(11);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(0)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!./node_modules/.0.28.1@css-loader/index.js!./node_modules/.3.2.0@autoprefixer-loader/index.js!./node_modules/.6.0.3@sass-loader/lib/loader.js!./calc.scss", function() {
-			var newContent = require("!!./node_modules/.0.28.1@css-loader/index.js!./node_modules/.3.2.0@autoprefixer-loader/index.js!./node_modules/.6.0.3@sass-loader/lib/loader.js!./calc.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: C:\\Users\\dinghq\\Desktop\\webpack\\images\\bg.jpg Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
 var test=__webpack_require__(2)
 __webpack_require__(3)
 __webpack_require__(4)
-__webpack_require__(5)
 
 var btn=document.getElementById('btn')
 var val1=document.getElementById('val1')
@@ -591,7 +553,7 @@ btn.onclick=function(){
 }
 
 /***/ }),
-/* 8 */
+/* 6 */
 /***/ (function(module, exports) {
 
 
@@ -686,7 +648,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -700,7 +662,7 @@ exports.push([module.i, "#val3{\r\n\tborder:1px solid red\r\n}\r\n\r\ninput{\r\n
 
 
 /***/ }),
-/* 10 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -708,24 +670,16 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "input {\n  background-color: skyblue;\n}\n", ""]);
+exports.push([module.i, "input {\n  background-color: skyblue;\n}\n.bg {\n  width: 100px;\n  height: 100px;\n  background: url(" + __webpack_require__(9) + ") no-repeat;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "input {\n  width: 50px;\n  border: none;\n  outline: none; }\n\n.bg {\n  background: url(" + __webpack_require__(6) + ") no-repeat; }\n", ""]);
-
-// exports
-
+module.exports = __webpack_require__.p + "0d8a2e946949d0a7d126a831371561b9.jpg";
 
 /***/ })
 /******/ ]);

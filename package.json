@@ -9,12 +9,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.7.7",
     "autoprefixer-loader": "^3.2.0",
     "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",
-    "style-loader": "^0.17.0"
+    "style-loader": "^0.17.0",
+    "url-loader": "^0.5.8"
   }
 }
