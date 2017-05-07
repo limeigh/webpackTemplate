@@ -18,9 +18,22 @@ module.exports={
 			{
 				test:/\.(png|jpg|ttf)$/,
 				loader:'url-loader?limit=20000'
+			},
+			{
+				test:/\.js$/,
+				loader:'babel-loader?presets[]=es2015'
 			}
+			// {
+			// 	test:/\.js$/,
+			// 	loader:'babel-loader',
+			// 	exclude:/node_modules/
+			// }
 		]
 	},
+	// babel:{
+	// 	presets:['es2015'],
+	// 	plugins:['transform-runtime']
+	// },
 	plugins:[
 		new HtmlwebpackPlugin({
 			title:'index',
